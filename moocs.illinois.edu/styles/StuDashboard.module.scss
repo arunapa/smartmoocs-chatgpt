@@ -1,0 +1,51 @@
+@use "/styles/colors" as *;
+
+$desktop-width: 64em;
+$tablet-width: 48em;
+$mobile-width: 20em;
+
+.content {
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: inline;
+  z-index: 1;
+
+  @media screen and (min-width: $mobile-width) and (max-width: $tablet-width){
+    h1{
+      font-size: 2em !important;
+      text-align: center;
+      padding: 0 0 0 0;
+      margin: auto auto .5em auto !important;
+    }
+    p{
+      text-align: center;
+      padding: 0 0 0 0;
+      margin: -1em auto auto auto !important;
+    }
+  }
+
+  h1 {
+    padding-top: 1em !important;
+    padding-bottom: .1em !important;
+    margin:  0 0 0 0;
+  }
+  p{
+    padding: 0 0 0 0;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .courseColumn {
+      display: flex !important;
+      justify-content: center;
+    }
+  }
+}
+
+.divider {
+  border-color: $color-primary;
+  margin-top: 1.5em !important;
+  margin-bottom: 3em !important;
+}

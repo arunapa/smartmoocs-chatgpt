@@ -1,0 +1,7 @@
+@use "./styles/colors" as *;
+
+.Button {
+    background-color: $color-accent;
+    color: white;
+    align-items: center;
+}

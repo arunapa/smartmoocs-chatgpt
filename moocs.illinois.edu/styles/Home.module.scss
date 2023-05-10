@@ -1,0 +1,46 @@
+@use "./colors" as *;
+
+//px to em (1em/16px)
+//pt to em (1em/12pt)
+$desktop-width: 64em;
+$tablet-width: 48em;
+$mobile-width: 20em;
+
+.content {
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem 0 0 0;
+  position: relative;
+
+  .centerFrame{
+    justify-content: center;
+    text-align: center !important;
+    @media screen and (min-width: $mobile-width) and (max-width: $tablet-width){
+      h1{
+        font-size: 2em !important;
+      }
+    }
+    .subtitle{
+      text-align: justify;
+      text-align-last: center;
+      line-height: 2em;
+      margin: auto;
+      padding: 1em 0 2em 0;
+
+      @media screen and (min-width: $mobile-width) and (max-width: $tablet-width){
+        padding: .5em 0 1em 0;
+        line-height: 1.5em;
+        max-width: 70vw;
+        font-size: .75em;
+      }
+    }
+    .button{
+      @media screen and (min-width: $mobile-width) and (max-width: $tablet-width){
+        margin: 1em 0 0 0;
+      }
+    }
+  }
+}

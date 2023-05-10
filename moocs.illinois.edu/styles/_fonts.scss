@@ -1,0 +1,21 @@
+// font imports
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;0,800;1,200;1,300;1,400;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+// font families
+$font-family-fjalla-one: "Fjalla One";
+$font-family-montserrat: "Montserrat";
+$font-family-source-sans-pro: "Source Sans Pro";
+$font-family-source-serif-pro: "Source Serif Pro";
+
+$font-family-body: "Source Sans Variable", "Source Sans", sans-serif;
+$font-family-header: "Fjalla One", sans-serif;
+
+// font
+$font-size-body: 21px;
+$font-body: normal normal 1rem/1.5rem $font-family-source-sans-pro;
+$font-header-1: normal normal 2.476rem/3.7rem $font-family-header;
+$font-header-2: normal 600 0.952rem/2.095rem $font-family-body;
+$font-header-3: normal 700 1.2rem/1.8rem $font-family-body;

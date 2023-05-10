@@ -1,0 +1,32 @@
+@use "/styles/colors" as *;
+
+.logo {
+  &:hover,
+  &:focus {
+    color: $color-grey !important;
+  }
+
+  .thin {
+    font-weight: 100 !important;
+  }
+}
+.navbar {
+  .ui.breadcrumb{
+    padding-left: 2rem !important;
+  }
+
+  .externalGuide {
+    display: flex !important;
+    justify-content: flex-end;
+    padding-right: 2em !important;
+  }
+}
+
+.moocs {
+  margin-top: 2.9rem;
+  padding-top: 1rem;
+
+  .nButton {
+    color: #ffffff !important;
+  }
+}

@@ -1,0 +1,53 @@
+@use "/styles/colors" as *;
+
+.content {
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .lectureCard{
+    height: 100% !important;
+  }
+
+  h1 {
+    padding-top: 1em !important;
+  }
+}
+
+.divider {
+  border-color: $color-primary;
+  margin: 2rem 0 !important;
+}
+
+.accordion {
+  border-radius: 0 !important;
+  margin-bottom: 3em;
+
+  transition: all 0.2s ease-in-out !important;
+  -webkit-transition: all 0.2s ease-in-out;
+
+  .title {
+    color: black !important;
+
+    &, &.active {
+      background-color: $color-grey !important;
+    }
+
+    &:hover, &:focus {
+      opacity: 0.9;
+    }
+  }
+
+  .accContent {
+    padding: 1rem !important;
+    transition: all 0.1s ease-in-out;
+
+    &:hover, &:focus {
+      cursor: pointer;
+      color: $color-accent;
+      background-color: $color-kinda-grey;
+    }
+  }
+}

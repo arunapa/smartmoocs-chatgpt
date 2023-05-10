@@ -1,0 +1,25 @@
+@use "/styles/colors" as *;
+
+.tile {
+    height: 100%;
+    border-radius: 1em !important;
+    overflow: hidden;
+    transition: transform .4s ease-in-out;
+    transition: box-shadow 1s ease-in;
+
+    &:hover, &:focus {
+        opacity: 0.9;
+        transform: scale(1.03) !important;
+        -webkit-transform: scale(1.03) !important;
+        box-shadow: 0 0 4px 4px rgba(245, 130, 30, 0.7) !important;
+        -webkit-box-shadow: 0 0 4px 4px rgba(245, 130, 30, 0.7) !important;
+    }
+
+    .header {
+        color: $color-background-primary !important;
+    }
+
+    .meta {
+        color: $color-pretty-grey !important;
+    }
+}

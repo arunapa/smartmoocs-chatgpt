@@ -1,0 +1,114 @@
+@use "./colors" as *;
+
+$desktop-width: 64em;
+$tablet-width: 48em;
+$mobile-width: 20em;
+
+.breadcrumbs {
+  @media only screen and (min-width: 768px) {
+    padding-left: 2em !important;
+  }
+}
+
+.content {
+  height: 100vh;
+  padding: 0;
+  position: relative;
+  top: 1rem;
+
+  .topicRow {
+    font-size: 0.6rem !important;
+    text-align: start !important;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: $color-secondary !important;
+    }
+
+    .topicInterval {
+      text-decoration: underline;
+    }
+  }
+
+  .heatmapWrapper {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    .heatmap {
+      border: 1px solid $color-pretty-grey;
+    }
+  }
+
+  .label {
+    color: $color-label;
+    font-size: 0.7rem;
+    font-style: italic;
+  }
+}
+
+.pusherVisible {
+  transform: scale(0.6) !important;
+  transform-origin: 90% 0 !important;
+  height: auto !important;
+}
+
+.videoFrame {
+  &:focus {
+    outline: $color-accent 2px solid !important;
+  }
+}
+
+.lectureTitle {
+  text-align: center;
+}
+
+.sidebar {
+  background-color: $color-background-primary !important;
+  height: 100vh;
+
+  p,
+  div {
+    color: #ffffff;
+    font-size: 0.7rem;
+  }
+
+  h3 {
+    color: white !important;
+    text-align: center;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1rem !important;
+    text-transform: uppercase !important;
+    font-size: 1rem !important;
+  }
+
+  @media screen and (min-width: $mobile-width) and (max-width: $tablet-width){
+    p, div{
+      font-size: .95em !important;
+    }
+    h3{
+      font-size: .85em !important;
+    }
+    
+      height: 50vh !important;
+      padding: 5em auto auto auto !important;
+      margin: 5em auto auto auto !important;
+  }
+}
+
+.buttonSticky {
+  position: fixed;
+  display: flex;
+  height: 4rem;
+  width: 31.25%;
+  bottom: 0;
+  background-color: $color-background-primary;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  background-color: $color-accent !important;
+  color: #ffff !important;
+}

@@ -1,0 +1,42 @@
+@use "/styles/colors" as *;
+
+$base-width: 40px;
+
+.courseraIcon {
+    color: $color-kinda-grey;
+    background-color: #439de9;
+    font-size: 0.85rem;
+    width: $base-width;
+    height: $base-width;
+    border-radius: $base-width;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        width: 200px;
+
+        .hidden {
+            display: flex;
+            float: right;
+            width: 80%;
+            padding: 0.2em 0.5rem;
+            white-space: nowrap;
+        }
+    }
+
+    .hidden {
+        display: none;
+        width: 0;
+        height: 100%;
+    }
+
+    .visible {
+        width: $base-width;
+        max-height: $base-width;
+        float: left;
+
+        .icon {
+            max-width: $base-width;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@use "./colors" as *;
+
+.content {
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 6em 0 0 0;
+  position: relative;
+  margin: auto !important;
+  display: inline; 
+  z-index: 1;
+
+  h1 {
+    text-align: center;
+    font-size: 36px !important;
+  }
+  grid{
+    align-items: center;
+    position: relative;
+  }
+  .button{
+    background-color: $color-accent !important;
+    color: #ffffff !important;
+    min-width: 11%;
+  }
+  Input{
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-radius: 0px !important;
+  }
+}
+
+.divider {
+  border-color: $color-primary;
+  margin-top: 1.5em !important;
+  margin-bottom: 2em !important;
+}
+.input{
+  min-width: 100%;
+  
+}
+.centerFrame{
+  align-items: center !important;
+  align-content: center !important;
+  text-align: center !important;
+}
+.colPosition{
+  max-width: 55% !important;
+  align-content: center !important;
+  align-items: center !important;
+  padding: 0 8em 0 0;
+  margin: auto;
+  position: relative;
+}
+.gridPosition{
+  padding: 2em 0 2em 0 !important;
+}
